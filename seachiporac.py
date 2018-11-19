@@ -4,7 +4,6 @@ import re
 def ip1(shuru):
     # str1 = input("请输入：")
     str2=("http://ip138.com/ips138.asp?ip="+shuru+"&action=2")
-    print ("查询url:"+str2)
     url=str2
     r=req.get(url).content.decode('gb2312')  
     html = etree.HTML(r)
